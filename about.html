@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - StudyCentral</title>
+
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="about.css">
 </head>
 <body>
+ 
+
     <!-- Navigation Bar -->
 <div class="simple-navbar">
   <div class="simple-logo">StudyCentral</div>
@@ -79,8 +82,7 @@
       </div>
     </section>
   </main>
-  <script>
-  // Highlight the current page link in navbar
+  <script>// Highlight the current page link in navbar
   const currentPage = window.location.pathname.split('/').pop();
   document.querySelectorAll('.simple-menu a').forEach(link => {
     const linkPage = link.getAttribute('href');
@@ -89,6 +91,7 @@
     }
   });
 </script>
+  
 
 </body>
 </html>
