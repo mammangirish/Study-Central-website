@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions - StudyCentral</title>
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="TOC.css" />
+</head>
+
+<body>
+  <!-- Simple Navigation  -->
+ <div class="simple-navbar">
+  <div class="simple-logo">StudyCentral</div>
+  <div class="simple-menu">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
+    <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>
+    <a href="syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus</a>
+    <a href="resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
+    <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+  </div>
+</div>
+
+  <!-- ===== TERMS SECTION ===== -->
+  <section class="terms-section">
+    <h1>Terms & Conditions</h1>
+    <p class="intro">
+      Welcome to <strong>StudyCentral</strong>. By accessing or using this website, you agree to comply with and be bound by the following terms and conditions.
+    </p>
+
+    <div class="terms-content">
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        By using StudyCentral, you confirm that you have read, understood, and agreed to these terms. If you do not agree, please do not use our website.
+      </p>
+
+      <h2>2. Use of Content</h2>
+      <p>
+        All materials provided on this site, including notes, PDFs, and study guides, are for educational and personal use only. Redistribution, resale, or commercial use without permission is strictly prohibited.
+      </p>
+
+      <h2>3. Accuracy of Information</h2>
+      <p>
+        While we strive to ensure that all information provided is accurate and up-to-date, StudyCentral does not guarantee the completeness or reliability of any content on the site.
+      </p>
+
+      <h2>4. External Links</h2>
+      <p>
+        StudyCentral may contain links to external websites. We are not responsible for the content, policies, or practices of those third-party sites.
+      </p>
+
+      <h2>5. Limitation of Liability</h2>
+      <p>
+        StudyCentral shall not be held liable for any direct, indirect, or incidental damages resulting from the use of our materials or services.
+      </p>
+
+      <h2>6. Changes to Terms</h2>
+      <p>
+        We reserve the right to update or modify these terms at any time. Updates will be posted on this page with the latest revision date.
+      </p>
+
+      <h2>7. Contact Us</h2>
+      <p>
+        If you have any questions about these Terms and Conditions, please contact us at:
+        <a href="mailto:studycentral@gmail.com">studycentral@gmail.com</a>
+      </p>
+    </div>
+
+    <p class="last-updated">Last Updated: November 2025</p>
+  </section>
+
+  
+  <!-- ===== SCRIPT ===== -->
+    <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="copyright-text">
+      &copy; 2025 StudyCentral. All Rights Reserved.
+    </div>
+  </footer>
+<script>
+  
+    const currentPage = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.simple-menu a').forEach(link => {
+      if (link.getAttribute('href') === currentPage) link.classList.add('active');
+    });
+  </script>
+</body>
+</html>

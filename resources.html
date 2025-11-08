@@ -10,68 +10,94 @@
 <body>
     
 </body>
-</html><!-- Resources: E‑Library -->
-<<main class="resources-page-main">
+</html>
+ <!-- Simple Navigation  -->
+ <div class="simple-navbar">
+  <div class="simple-logo">StudyCentral</div>
+  <div class="simple-menu">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
+    <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>
+    <a href="syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus</a>
+    <a href="resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
+    <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+  </div>
+</div>
+<section class="resources-section">
   <h1>CSE 3rd Semester Resources</h1>
-  <p class="subtitle">Find all the essential books and previous year questions for your 3rd semester subjects.</p>
+  <p>Find all the essential books and previous year questions for your 3rd semester subjects.</p>
 
-  <section class="res-grid">
-    <!-- Data Structures -->
-    <article class="res-box">
-      <h2>Data Structures</h2>
-      <div class="res-actions">
-        <a class="btn btn-primary" href="#" download>PYQS</a>
-        <a class="btn btn-muted" href="#" target="_blank" rel="noopener">📚 Book</a>
+  <div class="resources-grid">
+    <div class="resource-card">
+      <h2>Data Structure</h2>
+      <div class="buttons">
+        <a href="#" class="btn pdf">📄 PDF</a>
+        <a href="#" class="btn book">📘 Book</a>
       </div>
-    </article>
+    </div>
 
-    <!-- Discrete Structures -->
-    <article class="res-box">
-      <h2>Discrete Structures</h2>
-      <div class="res-actions">
-        <a class="btn btn-primary" href="#" download>PYQS</a>
-        <a class="btn btn-muted" href="#" target="_blank" rel="noopener">📚 Book</a>
+    <div class="resource-card">
+      <h2>Discrete Structure</h2>
+      <div class="buttons">
+        <a href="#" class="btn pdf">📄 PDF</a>
+        <a href="#" class="btn book">📘 Book</a>
       </div>
-    </article>
+    </div>
 
-    <!-- Software Engineering -->
-    <article class="res-box">
+    <div class="resource-card">
       <h2>Software Engineering</h2>
-      <div class="res-actions">
-        <a class="btn btn-primary" href="#" download>PYQS</a>
-        <a class="btn btn-muted" href="#" target="_blank" rel="noopener">📚 Book</a>
+      <div class="buttons">
+        <a href="#" class="btn pdf">📄 PDF</a>
+        <a href="#" class="btn book">📘 Book</a>
       </div>
-    </article>
+    </div>
 
-    <!-- Web Technologies -->
-    <article class="res-box">
+    <div class="resource-card">
       <h2>Web Technologies</h2>
-      <div class="res-actions">
-        <a class="btn btn-primary" href="#" download>PYQS</a>
-        <a class="btn btn-muted" href="#" target="_blank" rel="noopener">📚 Book</a>
+      <div class="buttons">
+        <a href="#" class="btn pdf">📄 PDF</a>
+        <a href="#" class="btn book">📘 Book</a>
       </div>
-    </article>
+    </div>
 
-    <!-- Latest Trends & Technologies -->
-    <article class="res-box">
-      <h2>Latest Trends &amp; Technologies</h2>
-      <div class="res-actions">
-        <a class="btn btn-primary" href="#" download>PYQS</a>
-        <a class="btn btn-muted" href="#" target="_blank" rel="noopener">📚 Book</a>
+    <div class="resource-card">
+      <h2>Latest Trends and Technologies</h2>
+      <div class="buttons">
+        <a href="#" class="btn pdf">📄 PDF</a>
+        <a href="#" class="btn book">📘 Book</a>
       </div>
-    </article>
+    </div>
 
-    <!-- Database Management Systems -->
-    <article class="res-box">
-      <h2>Database Management Systems</h2>
-      <div class="res-actions">
-        <a class="btn btn-primary" href="#" download>PYQS</a>
-        <a class="btn btn-muted" href="#" target="_blank" rel="noopener">📚 Book</a>
+    <div class="resource-card">
+      <h2>Database Systems</h2>
+      <div class="buttons">
+        <a href="#" class="btn pdf">📄 PDF</a>
+        <a href="#" class="btn book">📘 Book</a>
       </div>
-    </article>
-  </section>
-</main>
+    </div>
+  </div>
+</section>
+<script>
+  // Highlight the current page link in navbar
+  const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.simple-menu a').forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+<footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="#">Resources</a>
+      <a href="about.html">About</a>
+    </div>
+    <p class="copyright-text">© 2025 StudyCentral. All Rights Reserved.</p>
+  </footer>
+
 
   </body>
-</body>
+
 </html>
